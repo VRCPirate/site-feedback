@@ -1,0 +1,95 @@
+name: Bug Report
+description: Report a problem with our website
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us improve our website!
+
+        Before submitting:
+        - Please search existing issues to avoid duplicates.
+        - Do not share passwords, API keys, or private account information.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the issue you encountered.
+      placeholder: Tell us what went wrong...
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Affected URL
+      description: Where did the issue happen?
+      placeholder: https://example.com/page
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. See error...
+
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Other
+
+  - type: input
+    id: browser_version
+    attributes:
+      label: Browser Version
+      placeholder: Example: Chrome 120.0
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device Type
+      options:
+        - Desktop
+        - Laptop
+        - Mobile
+        - Tablet
+        - Other
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Recordings
+      description: Attach screenshots or screen recordings if available.
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Any other information that may help us investigate.
