@@ -69,7 +69,7 @@ body:
     id: browser_version
     attributes:
       label: Browser Version
-      placeholder: Example: Chrome 120.0
+      placeholder: "Example: Firefox 142.0"
 
   - type: dropdown
     id: device
